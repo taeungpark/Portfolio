@@ -14,11 +14,11 @@ let navlinks = document.querySelectorAll('header nav a');
 window.onscroll = () => {
     sections.forEach(sec => {
         let top = window.scrollY;
-        let offset = sec.offsetTop -80;
+        let offset = sec.offsetTop -100;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height) {
+        if(top >= offset && top <= offset + height) {
             // active navbar links
             navlinks.forEach(links => {
                 links.classList.remove('active');
