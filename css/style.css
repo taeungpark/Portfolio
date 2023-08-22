@@ -197,6 +197,7 @@ section {
 .skills-box {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 60rem;
     height: 4rem;
